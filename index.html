@@ -1,31 +1,32 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title>Employee Directory</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1"/>
-        <link rel="stylesheet" href="css/styles.css" />
-    </head>
-
-    <body>
+<head>
+<title>member Directory</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+    
+<body>
         
-	<div id="header" class="header">
-		<h1>Employee Directory</h1>
-	</div>
-	<div id="header2">
-		<h2>Employee List</h2>
-	</div>
-	
-	<div id="wrapper">
-		<ul id="employeeList" class="icon-list"></ul>
+<div id="memberListPage" data-role="page" >
+
+	<div data-role="header" data-position="fixed">
+		<h1>Member Directory</h1>
 	</div>
 
-	<div id="busy"/>Loading...</div>
+	<div data-role="content">
+         <ul id="memberList" data-role="listview" data-filter="true"></ul>
+    </div>		
 
-	<script src="js/phonegap.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/iscroll.js"></script>
-    <script src="js/employeelist.js"></script>
+</div>
 
-    </body>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.0rc1.min.js"></script>
+<script src="js/memberlist.js"></script>
+<script src="js/memberdetails.js"></script>
+<script src="js/reportlist.js"></script>
+
+</body>
 
 </html>
